@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    background-image: url('images/1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #FF9EAA; /* Adjust the border width and color as needed */
+    margin: 20px; /* Adjust margin to create space along the website */
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.flower, .leaves {
+    position: absolute;
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    z-index: 2; /* Ensure these elements are above the border */
+
+}
+
+.flower-top-left {
+    height: 310px;
+    width: 270px;
+}
+
+.flower-top-right {
+    right: 1px;
+    height: 310px;
+    width: 270px;
+}
+
+.flower-bottom-center {
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 110px;
+    width: 400px;
+}
+
+.leaves-left {
+    top: 80%;
+    left: 10px;
+    transform: translateY(-50%);
+    margin-left: -2%;
+}
+
+.leaves-right {
+    top: 80%;
+    right: 10px;
+    transform: translateY(-50%);
+    margin-right: -2%;
+}
